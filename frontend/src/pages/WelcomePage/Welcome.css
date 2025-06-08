@@ -1,0 +1,38 @@
+/* src/pages/WelcomePage.css */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.welcome-content {
+  background: white;
+  padding: 2.5rem;            /* 2.5rem (40px aprox) para que se sienta espacioso */
+  border-radius: 1rem;         /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 700px;            /* Tamaño máximo similar al de createCourse */
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@media (max-width: 640px) {
+  .welcome-content {
+    padding: 1.5rem;
+    width: 95%;
+  }
+}

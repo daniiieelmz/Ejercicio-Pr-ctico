@@ -1,0 +1,24 @@
+/* src/components/Card.css */
+.card {
+  background: #fff;
+  border-radius: 1rem; /* Bordes más redondeados */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra destacada pero minimalista */
+  padding: 2.5rem; /* Espacio interno para que el contenido respire */
+  width: 100%;
+  max-width: 600px; /* Card de mayor tamaño */
+  /* Se retiró margin auto porque el contenedor se encarga de centrarla */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .card {
+    border-radius: 0.75rem;
+    padding: 2rem;
+    max-width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+  }
+}

@@ -1,0 +1,62 @@
+/* src/components/CourseCard.css */
+.course-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.course-header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.course-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.course-instructor {
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.course-details {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.course-field {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.field-label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+  color: #4a5568;
+}
+
+.field-value {
+  color: #2d3748;
+}
+
+.course-description {
+  margin-top: 1rem;
+  color: #4a5568;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.course-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}

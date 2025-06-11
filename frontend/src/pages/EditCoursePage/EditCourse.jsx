@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import Title from '../../components/TitlePage/Title';
 import Button from '../../components/ButtonPage/Button';
-import Card from '../../components/CourseCardPage/CourseCard';
+import Card from '../../components/CardPage/Card';
 import './EditCourse.css';
 
 const EditCoursePage = () => {
